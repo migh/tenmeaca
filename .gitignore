@@ -1,0 +1,5 @@
+# IDEs and editors
+**/*.swp
+
+# Sensitive information
+**/credentials.toml

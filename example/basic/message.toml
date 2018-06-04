@@ -1,0 +1,9 @@
+# This is a TOML, for details check out https://github.com/toml-lang/toml
+# And my CV, used as an example for this library
+
+to = [
+  { name = "Pepe pecas", email = "pecas@example.com" }
+]
+subject = "This is a test message"
+body = "Just a mock body"
+text = "This is real text"
