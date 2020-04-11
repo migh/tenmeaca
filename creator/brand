@@ -1,0 +1,9 @@
+// Right now it is the same as Hermes.Product
+// We may add other properties
+type Brand struct {
+  Name        string
+  Link        string
+  Logo        string
+  Copyright   string
+  TroubleText string
+}

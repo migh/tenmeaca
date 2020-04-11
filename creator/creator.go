@@ -10,20 +10,21 @@ import (
 )
 
 type Creator struct {
-
+  Brand Brand
 }
 
-func New(templateFamily string) Creator {
+func New(templateFamilyName string) Creator {
   return Creator{}
 }
 
+func (c *Creator) SetBrand(brand Brand) {
+  c.Brand = brand
+}
+
+// Hermes Product looks more like a Brand to me
 func (c *Creator) CreateMessage() string {
   h := hermes.Hermes{
-    Product: hermes.Product{
-      Name: "Qarmazi Labs",
-      Link: "https://www.qarmazilabs.com",
-      Logo: "",
-    },
+    Product: c.Brand,
   }
 
   email := hermes.Email{

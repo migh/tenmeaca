@@ -21,8 +21,14 @@ func main() {
   // // var msgCtx creator.Message
   // msgCtx := ""
   // templateName := "Not implemented"
+  brand := creator.Brand{
+    Name: "Qarmazi Labs",
+    Link: "https://www.qarmazilabs.com",
+    Logo: "",
+  }
 
   creator := creator.New(templateFamily)
+  creator.SetBrand(brand)
   msg := creator.CreateMessage(/*msgCtx, templateName*/)
   _ = msg
   // if _, err := toml.DecodeFile(*messagePtr, &msgData); err != nil {
